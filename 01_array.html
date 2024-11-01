@@ -14,8 +14,15 @@
     <h1 id="a"></h1>
     <script>
       const arr = ["Apple", "Banana", "Orange", "siddiq"];
-      
-      let r = arr;
+
+      let r = "";
+
+      arr.forEach(myFunction);
+
+      function myFunction(value, index, array) {
+        r += value + "<br>";
+      }
+
       document.getElementById("a").innerHTML = r;
     </script>
   </body>
